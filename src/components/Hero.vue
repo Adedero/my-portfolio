@@ -1,4 +1,5 @@
 <script setup>
+import { RouterLink } from 'vue-router'
 import Dero from './Dero.vue'
 </script>
 
@@ -14,19 +15,26 @@ import Dero from './Dero.vue'
         </div>
 
         <div class="intro">
-            <p class="lg:text-right lg:w-96 lg:-m-20 lg:ml-80">
-                I’m a front end developer who’s
+            <p class="lg:text-right lg:w-[25rem] lg:-m-20 lg:ml-80">
+                Hi! <br>
+                I’m Adedero, a front end developer
                 dedicated to making your designs
                 a picture perfect reality.
                 <br>
-                In short, if you can think it,
+                If you can think it,
                 I can build it!
             </p>
         </div>
 
-        <div class="buttons flex gap-5 lg:mt-16 lg:ml-[33rem]">
-            <button class="hire-me">hire me</button>
-            <button class="learn-more">learn more</button>
+        <div class="buttons flex items-center gap-5 lg:mt-16 lg:ml-[33rem]">
+            <router-link to="/contact">
+                <button class="hire-me">hire me</button>
+            </router-link>
+            
+            <router-link to="/about">
+                <button class="learn-more">learn more</button>
+            </router-link>
+            
         </div>
     </section>
 </template>
@@ -46,7 +54,7 @@ section {
 
 .hero-container {
     position: relative;
-    padding: 0 3rem;
+    padding: 0 2rem;
     max-width: 35rem;
     height: 10rem;
     display: flex;
@@ -156,7 +164,7 @@ section {
     font-size: 1.1rem;
     padding: 2rem 1rem 1rem 1rem;
     opacity: 0;
-    animation: fade 1s cubic-bezier(0.215, 0.610, 0.355, 1) 2s 1 forwards;
+    animation: fade 1s cubic-bezier(0.215, 0.610, 0.355, 1) 3s 1 forwards;
 }
 
 .buttons {

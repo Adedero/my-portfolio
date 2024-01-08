@@ -17,5 +17,7 @@ import MenuBars from './MenuBars.vue'
         justify-content: space-between;
         padding: 1rem;
         height: 4rem;
+        display: fixed;
+        top: 0;
     }
 </style>

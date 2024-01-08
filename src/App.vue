@@ -11,8 +11,7 @@ import Nav from './components/Nav.vue'
     <Header />
     <Nav />
   </div>
-  
-  
+
   <RouterView />
 </template>
 

@@ -22,6 +22,8 @@ const themes = [
 },
 ]
 
+const span = ref(null)
+
 let count = ref(JSON.parse(localStorage.getItem('count')) || 0)
 
 function initialTheme() {
@@ -43,6 +45,7 @@ function checkCount() {
     location.reload()
 }
 
+
 </script>
 
 <template>
@@ -53,11 +56,13 @@ function checkCount() {
             <h1>dero</h1>
         </div>
         
-        <span @click="checkCount">.</span>
+        <span class="animate__animated animate_bounce" @click="checkCount" ref="span">.</span>
     </div>
 </template>
 
 <style scoped>
+@import 'animate.css/animate.min.css';
+
 @keyframes flip-y {
     0% {transform: translateY(0px); opacity: 0;}
     10% {transform: translateY(0px); opacity: 1;}
@@ -105,7 +110,9 @@ function checkCount() {
     color: var(--secondary);
     cursor: pointer;
     opacity: 0;
-    animation: appear 1s ease 1 0.5s forwards;
+    animation:
+        appear 1s ease 1 0.5s forwards,
+        bounce 1s 4s 1 forwards;
     transition: filter .2s;
 }
 

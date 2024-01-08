@@ -1,10 +1,21 @@
 <script setup>
-import { ref } from 'vue'
+import { onMounted, onUnmounted, ref } from 'vue'
 import { RouterLink } from 'vue-router'
 import { useNavOpen } from '../stores/utilities.js'
 import { links } from '../assets/data.js'
 const nav = useNavOpen()
 
+
+function removeNavOnResize() {
+    if (window.innerWidth >= 768) return nav.isOpen = false
+}
+
+onMounted(() => {
+    window.addEventListener('resize', removeNavOnResize)
+})
+onUnmounted(() => {
+    window.removeEventListener('resize', removeNavOnResize)
+})
 
 </script>
 
