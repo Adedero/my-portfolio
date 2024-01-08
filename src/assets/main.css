@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: rgb(0, 0, 0);
+  --primary: rgb(170, 255, 10);
+  --secondary: rgb(255, 21, 237);
+  --white: rgb(229, 229, 229);
+  --tertiary: rgb(63, 217, 255);
+}
+
+@font-face {
+  font-family: 'Metropolis';
+  src: url(/Metropolis-Black.otf);
+}
+
+@font-face {
+  font-family: 'Akurrat-Mono';
+  src: url(/Akkurat-Mono.OTF);
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  overflow-y: scroll;
+}
+
+#app {
+  min-height: 100dvh;
+  min-width: 100dvw;
+  background-color: var(--background);
+  overflow: hidden;
+}
+
+.cls-1 {
+  fill: #ff15ed;
+}
+
+.cls-2 {
+  fill: #aaff0a;
+}
