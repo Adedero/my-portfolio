@@ -23,7 +23,7 @@ main {
 
 .picture {
     opacity: 0;
-    animation: fadeInUp 1s ease .2s 1 forwards;
+    animation: fadeInUp 1s ease .5s 1 forwards;
 }
 
 .image-container {
@@ -48,14 +48,14 @@ main {
 .about > p {
     opacity: 0;
     color: var(--white);
-    animation: fadeInLeft 1.5s ease 1 .2s forwards;
+    animation: fadeInLeft 1.5s ease 1 .5s forwards;
 }
 
 .about > h1 {
     opacity: 0;
     color: var(--primary);
     font-size: 5rem;
-    animation: fadeInRight 1.2s ease 1 .2s forwards;
+    animation: fadeInRight 1.2s ease 1 .5s forwards;
 }
 
 @media (min-width: 1024px) { 
