@@ -11,7 +11,7 @@ const nav = useNavOpen()
 onMounted(() => {
     setTimeout(() => {
         document.querySelector("#section2").scrollIntoView({ behavior: 'smooth' })
-    }, 3500);
+    }, 4000);
 })
 </script>
 
