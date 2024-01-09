@@ -13,7 +13,6 @@ const nav = useNavOpen()
       <Hero />
     </div>
     <Socials />
-    <div class="added"></div>
     <h1 class="welcome hidden md:block">welcome</h1>
   </div>
 </template>
@@ -25,7 +24,7 @@ const nav = useNavOpen()
   opacity: 1;
   transition: margin 1s, opacity 2s;
   min-height: calc(100dvh - 5rem);
-  width: 100dvw !important;
+  min-width: 100dvw !important;
   padding-bottom: 2rem;
   position: relative;
 }
@@ -69,7 +68,6 @@ const nav = useNavOpen()
   bottom: 0;
   left: 0;
   z-index: 0;
-  background-color: red;
   line-height: 0;
   opacity: 0;
   animation: slide-across 2s cubic-bezier(0.215, 0.610, 0.355, 1) 1s 1 forwards;
@@ -78,6 +76,8 @@ const nav = useNavOpen()
 @media (min-width: 1024px) { 
   .container {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 
   .title {

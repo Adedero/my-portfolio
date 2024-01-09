@@ -8,6 +8,7 @@
   --secondary: rgb(255, 21, 237);
   --white: rgb(229, 229, 229);
   --tertiary: rgb(63, 217, 255);
+  --highlight: rgb(10, 10, 10);
 }
 
 @font-face {

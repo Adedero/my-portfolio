@@ -1,12 +1,12 @@
 <template>
-    <main class="w-full h-full md:flex md:items-center md:justify-center md:pl-20 md:pb-20 lg:pb-12 lg:pl-0">
+    <main class="w-full h-full md:flex md:items-center md:justify-center  md:pb-20 lg:pb-12 lg:pl-0 lg:gap-10">
         <div class="picture p-5 flex flex-col items-center justify-center animate_animated animate_fadeInUp md:order-2 md:shrink-0">
             <div class="image-container rounded-full p-3">
                 <img id="my-pic-1" class="w-80 h-80 rounded-full object-cover lg:w-[25rem] lg:h-[25rem]" src="../assets/my_pic.jpg" alt="my_pic">
             </div>
         </div>
 
-        <div class="about flex flex-col items-center justify-center md:order-1 md:items-start">
+        <div class="about p-5 flex flex-col items-center justify-center md:order-1 md:items-start">
             <p class="animate_animated animate_fadeInLeft lg:text-2xl">a little bit</p>
             <h1 class="animate_animated animate_fadeInRight lg:text-[6rem]">about me<span class="text-[var(--secondary)]">.</span></h1>
         </div>

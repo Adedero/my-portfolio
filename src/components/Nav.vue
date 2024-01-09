@@ -39,7 +39,6 @@ onUnmounted(() => {
         class="text-lg lg:text-2xl">
             {{ link.name}} 
         </router-link>
-
     </div>
 </template>
 
@@ -56,37 +55,45 @@ onUnmounted(() => {
 }
 
 nav a:first-of-type.is-open {
-    animation: slide 1s cubic-bezier(0.23, 1, 0.320, 1) forwards 0.1s 1;
+    animation: slide 0.8s cubic-bezier(0.23, 1, 0.320, 1) forwards 0.1s 1;
 }
 
 nav a:nth-of-type(2).is-open {
-    animation: slide 0.8s cubic-bezier(0.23, 1, 0.320, 1) forwards 0.2s 1;
+    animation: slide 0.7s cubic-bezier(0.23, 1, 0.320, 1) forwards 0.2s 1;
 }
 
 nav a:nth-of-type(3).is-open {
-    animation: slide 0.6s cubic-bezier(0.23, 1, 0.320, 1) forwards 0.4s 1;
+    animation: slide 0.6s cubic-bezier(0.23, 1, 0.320, 1) forwards 0.3s 1;
+}
+
+nav a:nth-of-type(4).is-open {
+    animation: slide 0.5s cubic-bezier(0.23, 1, 0.320, 1) forwards 0.4s 1;
 }
 
 nav a:last-of-type.is-open {
-    animation: slide 0.4s cubic-bezier(0.23, 1, 0.320, 1) forwards 0.6s 1; 
+    animation: slide 0.4s cubic-bezier(0.23, 1, 0.320, 1) forwards 0.5s 1; 
 }
 
 
 
 nav a:first-of-type.is-closed {
-    animation: slide-back 0.4s cubic-bezier(0.23, 1, 0.320, 1) backwards 0.6s 1;
+    animation: slide-back 0.2s cubic-bezier(0.23, 1, 0.320, 1) backwards 0.5s 1;
 }
 
 nav a:nth-of-type(2).is-closed {
-    animation: slide-back 0.6s cubic-bezier(0.23, 1, 0.320, 1) backwards 0.4s  1;
+    animation: slide-back 0.4s cubic-bezier(0.23, 1, 0.320, 1) backwards 0.4s  1;
 }
 
 nav a:nth-of-type(3).is-closed {
+    animation: slide-back 0.6s cubic-bezier(0.23, 1, 0.320, 1) backwards 0.3s  1;
+}
+
+nav a:nth-of-type(4).is-closed {
     animation: slide-back 0.8s cubic-bezier(0.23, 1, 0.320, 1) backwards 0.2s  1;
 }
 
 nav a:last-of-type.is-closed {
-    animation: slide-back 1s cubic-bezier(0.23, 1, 0.320, 1) backwards 0.1s 1; 
+    animation: slide-back 1.0s cubic-bezier(0.23, 1, 0.320, 1) backwards 0.1s 1; 
 }
 
 nav  {

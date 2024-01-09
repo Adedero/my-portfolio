@@ -6,12 +6,14 @@ import AboutMeFirst from '../components/AboutMeFirst.vue'
 import AboutMeSecond from '../components/AboutMeSecond.vue'
 
 
+
 const nav = useNavOpen()
 
 onMounted(() => {
-    setTimeout(() => {
-        document.querySelector("#section2").scrollIntoView({ behavior: 'smooth' })
-    }, 4000);
+  const section = document.querySelector("#section2")
+  setTimeout(() => {
+      section.scrollIntoView({ behavior: 'smooth' })
+  }, 4000);
 })
 </script>
 
@@ -34,7 +36,7 @@ onMounted(() => {
   transition: margin 1s, opacity 2s;
   height: calc(100dvh - 5rem);
   min-height: calc(100dvh - 5rem);
-  width: 100dvw !important;
+  min-width: 100dvw !important;
   overflow-y: scroll;
   position: relative;
 }

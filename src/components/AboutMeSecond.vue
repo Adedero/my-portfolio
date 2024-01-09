@@ -4,7 +4,7 @@ import { RouterLink } from 'vue-router'
 </script>
 
 <template>
-    <main class="w-full h-full md:flex md:justify-center lg:px-5">
+    <main class="w-full h-full md:flex md:justify-center">
         <div class="picture hidden p-5 md:block md:shrink-0 animate_animated animate_fadeInUp">
             <div class="image-container rounded-full p-3">
                 <img id="my-pic-1" class="w-40 h-40 rounded-full object-cover lg:w-[25rem] lg:h-[25rem]" src="../assets/my_pic_2.jpg" alt="my_pic">

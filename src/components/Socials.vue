@@ -1,6 +1,5 @@
 <template>
     <div class="svg-container">
-        <a href=""></a>
         <svg id="linkedin" viewBox="0 0 32 32">
             <g>
                 <path d="M19.515,11.952c-0.678,0-1.18,0.171-1.573 0.387c-0.063-0.224-0.27-0.388-0.514-0.339h-2.984 c-0.295-0.049-0.534,0.19-0.443,0.5v11c-0.091,0.28,0.148,0.52,0.443,0.5h2.984c0.295,0.02,0.534-0.22,0.534-0.515l-0.001-6.648 c-0.001-0.003-0.012-0.321,0.189-0.54c0.161-0.174,0.438-0.263,0.821-0.263c0.638,0,0.922,0.261,1.028,0.845v6.606
@@ -53,10 +52,10 @@
     align-items: center;
     justify-content: center;
     gap: 1rem;
-    margin-top: 2rem;
+    margin-top: 1rem;
     width: 100dvw;
-
 }
+
 svg {
     fill: var(--secondary);
     cursor: pointer;
@@ -90,10 +89,11 @@ svg:last-of-type {
     order: 1;
     flex-direction: column;
     width: 4rem;
-    padding-left: 1rem;
     gap: 2rem;
-    justify-content: flex-start;
-    padding-top: 8rem;
+    padding-left: 1rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: -3rem;
   }
 }
 </style>
