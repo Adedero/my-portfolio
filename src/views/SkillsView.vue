@@ -33,6 +33,7 @@ onUnmounted(() => {
 
 <template>
   <div :class="['container', nav.isOpen ? 'is-open' : '']">
+    <h1 class="font-[Metropolis] text-[var(--primary)] absolute px-[1rem] text-[2.5rem]">skills<span class="text-[var(--secondary)]">.</span></h1>
     <Teleport to="body">
         <div class="popup" ref="popup"></div>
     </Teleport>
@@ -138,10 +139,11 @@ onUnmounted(() => {
 
 .cards-container {
     aspect-ratio: 1/1;
-    width: 15rem;
+    width: 14rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     animation: rotate 2s ease 3s 1;
+    margin-top: 2rem;
 }
 
 .card {
