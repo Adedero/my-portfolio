@@ -1,24 +1,31 @@
 <script setup>
 import { ref } from 'vue'
 
+const primary = 'rgb(170, 255, 10)'
+const secondary = 'rgb(255, 21, 237)'
+const white = 'rgb(229, 229, 229)'
+const tertiary = 'rgb(63, 217, 255)'
+const red = '#FF158B'
+const yellow = '#FFDD01'
+
 const themes = [
 {
-    '--primary': 'rgb(170, 255, 10)',
-    '--secondary': 'rgb(255, 21, 237)',
-    '--white': 'rgb(229, 229, 229)',
-    '--tertiary': 'rgb(63, 217, 255)'
+    '--primary': primary,
+    '--secondary': secondary,
+    '--white': white,
+    '--tertiary': tertiary
 },
 {
-    '--primary': 'rgb(63, 217, 255)',
-    '--secondary': 'rgb(229, 229, 229)',
-    '--white': 'rgb(170, 255, 10)',
-    '--tertiary': 'rgb(255, 21, 237)'
+    '--primary': tertiary,
+    '--secondary': white,
+    '--white': primary,
+    '--tertiary': secondary
 },
 {
-    '--primary': '#FF158B',
-    '--secondary': '#FFDD01',
-    '--white': 'rgb(229, 229, 229)',
-    '--tertiary': 'rgb(170, 255, 10)'
+    '--primary': red,
+    '--secondary': yellow,
+    '--white': white,
+    '--tertiary': primary
 },
 ]
 

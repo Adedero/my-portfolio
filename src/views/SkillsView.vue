@@ -7,6 +7,7 @@ const popup = ref(null)
 const nav = useNavOpen()
 
 function showPopup(event) {
+    if (event.target.id === "") return
     const rect = event.currentTarget.getBoundingClientRect()
     popup.value.style.top = `${rect.top}px`
     popup.value.style.left = `${rect.left}px`
@@ -52,7 +53,7 @@ onUnmounted(() => {
             <img src="../assets/icons/tailwind.svg" alt="tailwind" class="w-12 h-12 object-cover">
         </div>
 
-        <div id="center" class="card">
+        <div class="center card">
               <svg viewBox="0 0 110.91 61">
                 <g id="Layer_1-2" data-name="Layer 1">
                     <g>
@@ -161,7 +162,7 @@ onUnmounted(() => {
 }
 
 
-#center svg {
+.center svg {
     width: 3rem;
     transition: 1s;
     animation: pulse 0.2s ease 1s 1 forwards;
