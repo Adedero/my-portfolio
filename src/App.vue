@@ -9,9 +9,9 @@
         <AboutMe />
         <MySkills />
         <MyProjects />
+        <MyExperience />
       </div>
     </section>
-
     <VFooter />
   </main>
 </template>

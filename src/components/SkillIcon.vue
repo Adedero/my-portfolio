@@ -438,19 +438,21 @@ defineProps({
 <style scoped>
 @keyframes show {
   0% {
-    transform: translateX(100px);
+    filter: blur(12px);
+    transform: translateY(100px);
   }
 
   50% {
-    transform: translateX(-20px);
+    transform: translateY(-20px);
   }
 
   100% {
-    transform: translateX(0);
+    filter: blur(0);
+    transform: translateY(0);
   }
 }
 
 .skill-icon.in-view {
-  animation: show 0.4s 1
+  animation: show 0.6s 1
 }
 </style>
