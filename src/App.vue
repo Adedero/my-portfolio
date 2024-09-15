@@ -10,6 +10,7 @@
         <MySkills />
         <MyProjects />
         <MyExperience />
+        <MyEducation />
       </div>
     </section>
     <VFooter />

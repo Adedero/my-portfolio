@@ -116,7 +116,6 @@ onMounted(() => {
   gap: 0.5rem;
   opacity: 0;
   transition: all 0.6s ease-in;
-  overflow: hidden;
 }
 
 .skill-box.in-view {

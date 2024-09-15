@@ -44,7 +44,7 @@ onMounted(() => {
 <template>
   <div class="image-container">
     <img v-if="imageStatus === 'loaded'" :src="src" :alt="alt" @load="onLoad" @error="onError" :class="imageClass" />
-    <div v-else class="aspect-square max-h-[474px] grid place-content-center bg-slate-300 text-slate-600">
+    <div v-else class="aspect-square w-[22rem] grid place-content-center bg-slate-300 text-slate-600 rounded-full">
       <div v-if="imageStatus === 'loading'" class="text-4xl">
         adedero
       </div>

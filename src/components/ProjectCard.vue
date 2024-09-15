@@ -55,7 +55,7 @@ defineProps({
 
 <style scoped>
 .project-card {
-  @apply opacity-0 translate-y-20 blur-md transition-all duration-300 ease-in border rounded-lg px-5 py-4 overflow-hidden relative cursor-context-menu select-none shadow-sm
+  @apply opacity-0 translate-y-20 blur-md transition-all duration-300 ease-in border rounded-lg px-5 py-4 overflow-hidden relative cursor-context-menu select-none shadow-sm hover:bg-slate-200 dark:hover:bg-slate-800
 }
 
 .project-card.in-view {
@@ -63,12 +63,12 @@ defineProps({
 }
 
 .image-container {
-  @apply absolute overflow-hidden duration-200 transition-all w-full h-full border shadow bg-slate-300 dark:bg-slate-800 rounded-xl top-0 left-0 -z-[1] translate-x-[40%] translate-y-[25%] scale-[0.6]
+  @apply absolute overflow-hidden transition-all w-full h-full border shadow bg-slate-300 dark:bg-slate-800 rounded-xl top-0 left-0 -z-[1] translate-x-[40%] translate-y-[25%] scale-[0.6]
 }
 
 .project-card:hover {
   .image-container {
-    @apply translate-x-[60%] translate-y-0 scale-100 rounded-none
+    @apply -rotate-[5deg]
   }
 }
 

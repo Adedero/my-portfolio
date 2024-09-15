@@ -15,7 +15,7 @@ const projects = [
     imageUrl: ofriend,
     demoUrl: 'https://ofriend.io',
     githubUrl: 'https://github.com/Adedero/ofriend-client',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non diam et arcu scelerisque faucibus. Sed vel ex quis neque consequat efficitur.'
+    description: 'I developed the Ofriend Educational Module, a comprehensive learning platform that integrates a social media and private chat system for enhanced student interaction and collaboration. The platform also includes an extensive eLibrary, providing easy access to academic resources. Designed for scalability, security, and user engagement, this project highlights my ability to lead and execute complex, multi-feature platforms that serve educational institutions with seamless performance and user-friendly interfaces.'
   },
   {
     id: 2,
@@ -25,17 +25,17 @@ const projects = [
     imageUrl: portfolio,
     demoUrl: 'https://jesus-labs.vercel.app',
     githubUrl: 'https://github.com/Adedero/jesus_labs',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non diam et arcu scelerisque faucibus. Sed vel ex quis neque consequat efficitur.'
+    description: 'Built using Tailwind CSS and Vue, my personal portfolio showcases my development skills and projects in a modern, responsive design. It highlights my expertise in creating intuitive, fast-loading, and aesthetically pleasing websites while maintaining clean and modular code. The portfolio serves as both a personal brand and a testament to my full-stack development capabilities.'
   },
   {
     id: 3,
-    title: 'JesusLabs',
+    title: 'Jesus Labs',
     year: 2024,
     tools: ['HTML', 'CSS', 'Javascript'],
     imageUrl: jesusLabs,
     demoUrl: 'https://jesus-labs.vercel.app',
     githubUrl: 'https://github.com/Adedero/jesus_labs',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non diam et arcu scelerisque faucibus. Sed vel ex quis neque consequat efficitur.'
+    description: 'I contributed to the development of the JesusLabs NFT platform, which enables users to mint, buy, and sell NFTs. The platform was designed to offer a seamless experience with blockchain integration, ensuring secure transactions and digital ownership. My work focused on optimizing the user interface to ensure scalability and high performance, bringing digital assets to a broader audience.'
   },
   {
     id: 4,
@@ -45,7 +45,7 @@ const projects = [
     imageUrl: solarCare,
     demoUrl: 'https://solarcare.vercel.app/',
     githubUrl: 'https://github.com/Adedero/solar-panel-diagnosis-system',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non diam et arcu scelerisque faucibus. Sed vel ex quis neque consequat efficitur.'
+    description: 'I created SolarCare as an undergraduate project. It is a self-diagnosing system for solar panels which helps users find and fix problems with their solar panels.'
   },
   {
     id: 5,
@@ -55,7 +55,7 @@ const projects = [
     imageUrl: soltracker,
     demoUrl: 'https://soltracker-futo.vercel.app/',
     githubUrl: 'https://github.com/Adedero/soltracker',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non diam et arcu scelerisque faucibus. Sed vel ex quis neque consequat efficitur.'
+    description: 'SolTracker continuously monitors solar panel performance, providing real-time data and alerts to optimize energy output. Designed for ease of use and reliability, SolarCare helps maintain peak solar panel efficiency while reducing the need for manual inspections.'
   }
 ]
 

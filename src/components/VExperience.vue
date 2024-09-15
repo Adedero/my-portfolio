@@ -4,7 +4,8 @@ defineProps({
   duration: { type: String },
   location: { type: String },
   jobTitle: { type: String },
-  jobDescription: { type: [String, Array] },
+  description: { type: String },
+  activities: { type: Array },
   companyLogo: { type: String }
 });
 </script>
@@ -23,19 +24,20 @@ defineProps({
     </div>
 
     <div class="mt-2 flex items-center gap-2 justify-between">
-      <h1 class="text font-semibold">{{ jobTitle }}</h1>
+      <h1 class="font-semibold">{{ jobTitle }}</h1>
       <div class="flex items-center gap-2 text-sm">
         <span class="pi pi-map-marker" style="font-size: 0.8rem"></span>
         <span>{{ location }}</span>
       </div>
     </div>
 
-    <div>
-      <div v-if="typeof jobDescription === 'string'">{{ jobDescription }}</div>
+    <div class="mt-2">
+      <div>{{ description }}</div>
 
-      <div v-else>
+      <div class="mt-2">
+        <p class="font-medium">Key contributions:</p>
         <ul class="grid gap-2">
-          <li v-for="description in jobDescription" :key="description">&mdash; {{ description }}</li>
+          <li v-for="item in activities" :key="item">&mdash; {{ item }}</li>
         </ul>
       </div>
     </div>
