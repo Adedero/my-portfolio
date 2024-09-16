@@ -1,5 +1,5 @@
 <script setup>
-import adedero from '@/assets/images/adedero.png'
+import adedero from '@/assets/images/avatar.png'
 </script>
 
 <template>
