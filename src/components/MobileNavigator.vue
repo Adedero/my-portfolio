@@ -74,7 +74,7 @@ onUnmounted(() => window.removeEventListener("resize", onresize));
         @click="toggle"
         class="menu-btn "
         :class="{ 'active': visible }">
-        <span class="pi pi-plus"></span>
+        <span style="font-size: 1.5rem" class="pi pi-plus"></span>
       </button>
     </div>
   </nav>
@@ -97,7 +97,7 @@ onUnmounted(() => window.removeEventListener("resize", onresize));
 }
 
 .menu-btn {
-  @apply bg-rose-500 hover:bg-rose-600 transition-all text-white w-9 grid place-content-center aspect-square rounded-full
+  @apply bg-rose-500 hover:bg-rose-600 transition-all text-white w-12 grid place-content-center aspect-square rounded-full
 }
 
 .menu-btn.active {
