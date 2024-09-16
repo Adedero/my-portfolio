@@ -33,8 +33,6 @@ onMounted(() => {
             activateLink(links, link);
           }
         })
-      } else {
-        //
       }
     });
   };
