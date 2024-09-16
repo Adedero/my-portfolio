@@ -2,7 +2,16 @@ import './assets/main.css';
 import 'primeicons/primeicons.css';
 import '@fontsource-variable/montserrat';
 
+import ToastPlugin from 'vue-toast-notification';
+//import 'vue-toast-notification/dist/theme-default.css';
+import 'vue-toast-notification/dist/theme-bootstrap.css';
+
 import { createApp } from 'vue';
 import App from './App.vue';
 
-createApp(App).mount('#app');
+const app = createApp(App);
+
+app.use(ToastPlugin);
+
+app.mount('#app');
+

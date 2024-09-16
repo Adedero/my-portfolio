@@ -1,5 +1,9 @@
 <script setup>
 import adedero from '@/assets/images/avatar.png'
+import showToast from '@/utils/show-toast';
+import { useToast } from 'vue-toast-notification';
+
+const toast = useToast();
 </script>
 
 <template>
@@ -69,8 +73,8 @@ import adedero from '@/assets/images/avatar.png'
           <a href="#about-me">
             <VButton text="Learn More" outlined button-class="w-36" />
           </a>
-          <a href="/my-resume.pdf" download="Adedero_Cosmos_Resume">
-            <VButton text="R&#233;sum&#233;" icon="pi pi-download" button-class="w-36" /> 
+          <a @click="showToast(toast)" href="/my-resume.pdf" download="Adedero_Cosmos_Resume">
+            <VButton text="R&#233;sum&#233;" icon="pi pi-download" button-class="w-36" />
           </a>
         </div>
       </div>
