@@ -49,15 +49,16 @@ onMounted(() => {
         adedero
       </div>
 
-      <div v-if="imageStatus === 'error'">
+      <div v-if="imageStatus === 'error'" class="flex flex-col items-center justify-center gap-1">
         <p>Failed to load</p>
-        <button @click="retryLoad">Retry</button>
+        <VButton @click="retryLoad" size="small" text="Retry" icon="pi pi-replay" />
+        <!-- <button @click="retryLoad" class="bg-rose-500 text-white">Retry</button> -->
       </div>
     </div>
   </div>
 </template>
 
-<style scoped>
+<!-- <style scoped>
 button {
   padding: 8px 12px;
   background-color: #007bff;
@@ -69,4 +70,4 @@ button {
 button:hover {
   background-color: #0056b3;
 }
-</style>
+</style> -->
