@@ -50,8 +50,8 @@ onMounted(() => {
 </script>
 
 <template>
-  <section id="tech" class="mt-20">
-    <SectionHeader text="Technologies" />
+  <section id="skills" class="section mt-20">
+    <SectionHeader text="Skills" />
     <div class="mt-4">
       <div>
         <h1 class="font-semibold text-xl">Languages</h1>

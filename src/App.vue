@@ -1,6 +1,8 @@
 <template>
   <main>
     <VHeader />
+    <VNavigator />
+    <MobileNavigator />
 
     <section class="grid justify-center py-5 px-5 md:px-0">
       <div class="md:w-[80dvw] lg:w-[70dvw] xl:w-[60dvw]">

@@ -14,7 +14,7 @@ const education = [
 </script>
 
 <template>
-  <section id="education" class="mt-20">
+  <section id="education" class="section mt-20">
     <SectionHeader text="Education" />
 
     <div class="mt-4 grid gap-2">

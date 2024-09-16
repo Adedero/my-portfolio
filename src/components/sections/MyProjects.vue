@@ -82,7 +82,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <section id="projects" class="mt-20">
+  <section id="projects" class="section mt-20">
     <SectionHeader text="Projects" />
 
     <div class="mt-4">

@@ -57,7 +57,7 @@ const experiences = [
 </script>
 
 <template>
-  <section id="experience" class="mt-20">
+  <section id="experience" class="section mt-20">
     <SectionHeader text="Experience" />
 
     <div class="mt-4 grid gap-2">

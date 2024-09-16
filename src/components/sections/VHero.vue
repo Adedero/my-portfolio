@@ -3,7 +3,7 @@ import adedero from '@/assets/images/adedero.png'
 </script>
 
 <template>
-  <section id="home" class="w-full md:h-[calc(100dvh-5rem)] md:grid md:place-content-center">
+  <section id="home" class="section w-full md:h-[calc(100dvh-5rem)] md:grid md:place-content-center">
     <div class="w-full flex flex-col items-center justify-between gap-5 md:flex-row md:-mt-10 ">
       <div class="flex flex-col gap-2 items-center md:order-2">
         <VImage :src="adedero" alt="adedero" image-class="max-w-[22rem] rounded-full" />

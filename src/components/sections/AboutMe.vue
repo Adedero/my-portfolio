@@ -3,7 +3,7 @@ const years = new Date().getFullYear() - 2020;
 </script>
 
 <template>
-  <section id="about-me" class="">
+  <section id="about-me" class="section">
     <SectionHeader text="About Me" />
     <div class="mt-4">
 
