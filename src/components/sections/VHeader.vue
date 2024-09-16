@@ -10,7 +10,9 @@ const url = import.meta.env.VITE_URL
 
     <div class="flex items-center gap-5">
       <VDarkModeToggler />
-      <VButton text="R&#233;sum&#233;" icon="pi pi-download" />
+      <a href="/my-resume.pdf" download="Adedero_Cosmos_Resume">
+        <VButton text="R&#233;sum&#233;" icon="pi pi-download" />
+      </a>
     </div>
   </header>
 </template>

@@ -25,8 +25,8 @@ import adedero from '@/assets/images/avatar.png'
 
         <p class="mt-1 flex items-center justify-center md:justify-normal gap-2 text-sm">
           <svg width="15px" height="15px" fill="currentColor" version="1.1" id="Layer_1"
-            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-            viewBox="1052 796 200 200" enable-background="new 1052 796 200 200" xml:space="preserve">
+            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="1052 796 200 200"
+            enable-background="new 1052 796 200 200" xml:space="preserve">
             <g>
               <path d="M1151.998,921.75c-4.129,0-8.17-0.771-12.01-2.292l-50.167-19.888c0,11.08,0,27.65,0,32.066
                 c0,15.562,27.836,28.174,62.178,28.174s62.181-12.612,62.181-28.174v-32.067l-50.172,19.889
@@ -69,7 +69,9 @@ import adedero from '@/assets/images/avatar.png'
           <a href="#about-me">
             <VButton text="Learn More" outlined button-class="w-36" />
           </a>
-          <VButton text="R&#233;sum&#233;" icon="pi pi-download" button-class="w-36" />
+          <a href="/my-resume.pdf" download="Adedero_Cosmos_Resume">
+            <VButton text="R&#233;sum&#233;" icon="pi pi-download" button-class="w-36" /> 
+          </a>
         </div>
       </div>
     </div>

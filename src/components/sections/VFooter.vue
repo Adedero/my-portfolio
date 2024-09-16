@@ -38,7 +38,7 @@ const url = import.meta.env.VITE_URL
       <a href="#projects" class="hover:underline">Projects</a>
       <a href="#experience" class="hover:underline">Experience</a>
       <a href="#education" class="hover:underline">Education</a>
-      <a href="" class="hover:underline">R&#233;sum&#233;</a>
+      <a href="/my-resume.pdf" download="Adedero_Cosmos_Resume" class="hover:underline">R&#233;sum&#233;</a>
     </div>
   </footer>
 </template>
