@@ -1,13 +1,20 @@
 <script setup>
+import showToast from '@/utils/show-toast';
+import { useToast } from 'vue-toast-notification';
+
 defineProps({
-  projectTitle: { type: String, default: 'Project' },
+  title: { type: String, default: 'Project' },
   year: { type: [String, Number] },
   imageUrl: { type: String },
   githubUrl: { type: String },
   demoUrl: { type: String },
   description: { type: String },
   tools: { type: Array },
-})
+  isPrivate: { type: Boolean }
+});
+
+
+const toast = useToast();
 
 </script>
 
@@ -15,7 +22,7 @@ defineProps({
   <div
     class="project-card">
     <div class="flex items-center gap-2 justify-between">
-      <a :href="demoUrl" target="_blank" class="font-bold text-xl cursor-pointer hover:underline">{{ projectTitle }}</a>
+      <a :href="demoUrl" target="_blank" class="font-bold text-xl cursor-pointer hover:underline">{{ title }}</a>
       <p class="font-semibold text-sm">{{ year }}</p>
     </div>
 
@@ -35,7 +42,8 @@ defineProps({
       <div class="mt-4">
         <slot name="links">
           <div class="flex items-center gap-4">
-            <a :href="githubUrl" target="_blank">
+            <VButton v-if="isPrivate" text="Code" icon="pi pi-lock" outlined size="small" @click="showToast(toast, 'The code for this project is private', 'warning')" />
+            <a v-else :href="githubUrl" target="_blank">
               <VButton text="Code" icon="pi pi-github" outlined size="small" />
             </a>
 
@@ -48,7 +56,7 @@ defineProps({
     </div>
 
     <div class="image-container hidden md:block">
-      <img :src="imageUrl" :alt="projectTitle || 'logo'" class="w-full h-full object-cover object-top">
+      <img :src="imageUrl" :alt="title || 'logo'" class="w-full h-full object-cover object-top">
     </div>
   </div>
 </template>
